@@ -55,24 +55,28 @@
             <ComboBox Name="cmbTo" Height="40" Width="200" Margin="23 10 0 0"
                        VerticalAlignment="Top" FontSize="22" FontFamily="Trebuchet MS" />
         </StackPanel>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center"
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="80" Width="780" Margin="0 150 0 0">
-            <Label Height="40" Width="150" Content="Course:" Margin="30 0 0 0"
-                   VerticalAlignment="Top" Foreground="White" FontSize="22" FontFamily="Trebuchet MS" />
-            <Label Height="40" Width="250" Content="Converted Currency:" Margin="85 0 0 0"
-                   VerticalAlignment="top" Foreground="White" FontSize="22" FontFamily="Trebuchet MS" />
-        </StackPanel>
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center"
-                    VerticalAlignment="Top" Height="40" Width="780" Margin="0 190 0 0">
-            <Label Height="40" Width="200" Margin="35 0 0 0"
-                   VerticalAlignment="Top" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
-            <Label Height="40" Width="485" Margin="35 0 0 0"
-                   VerticalAlignment="top" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
+            <Label Height="40" Width="250" Content="Converted Currency:" Margin="30 0 0 0"
+                   VerticalAlignment="top" HorizontalAlignment="Left" Foreground="White"
+                   FontSize="22" FontFamily="Trebuchet MS" />
+            <Label Height="40" Width="435" Margin="35 0 0 0"
+                   VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="60" Width="800">
+            <Button Name="Check" Content="Check Course" Foreground="White"
+                    FontSize="22" FontFamily="Trebuchet MS" Height="50" Width="200" Margin="50 0 0 0"
+                    Style="{StaticResource ButtonRound}">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#2896f4" Offset="0.0" />
+                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
             <Button Name="Convert" Content="Convert" Foreground="White"
-                    FontSize="22" FontFamily="Trebuchet MS" Height="50" Width="200" Margin="175 0 0 0"
+                    FontSize="22" FontFamily="Trebuchet MS" Height="50" Width="200" Margin="50 0 0 0"
                     Style="{StaticResource ButtonRound}" RenderTransformOrigin="0.5,0.504">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
@@ -91,7 +95,6 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            
         </StackPanel>
     </Grid>
 </Window>
