@@ -29,5 +29,15 @@ namespace CurrencyConverter
         {
 
         }
+
+        private void Convert_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

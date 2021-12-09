@@ -16,20 +16,20 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <Label Content="Currency Converter" Width="820" 
                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                   FontSize="40" FontWeight="ExtraBold" FontFamily="Trebuchet MS" Foreground="#1c58e8"/>
+                   FontSize="40" FontWeight="ExtraBold" FontFamily="Trebuchet MS" Foreground="#4E31C2"/>
         </StackPanel>
         <Border Grid.Row="1" Width="800" CornerRadius="15" BorderThickness="8" Margin="10">
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                    <GradientStop Color="#2896f4" Offset="0.0" />
-                    <GradientStop Color="#1c58e8" Offset="1.0" />
+                    <GradientStop Color="#4E31C2" Offset="0.0" />
+                    <GradientStop Color="#1E0582" Offset="1.0" />
                 </LinearGradientBrush>
             </Border.BorderBrush>
             <Rectangle >
                 <Rectangle.Fill>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
@@ -45,15 +45,17 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Margin="0 70 0 0" Height="60" Width="780">
-            <TextBlock Name="txtAmount" Height="40" Width="200" Margin="35 10 0 0"
-                       PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" 
-                       Background="White" FontSize="22" FontFamily="Trebuchet MS" />
+            <TextBox Name="txtAmount" Height="40" Width="200" Margin="35 10 0 0"
+                     PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top"
+                     VerticalContentAlignment="Center" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
             <ComboBox Name="cmbFrom" Height="40" Width="200" Margin="35 10 0 0"
-                       VerticalAlignment="Top" FontSize="22" FontFamily="Trebuchet MS" />
+                      VerticalAlignment="Top" VerticalContentAlignment="Top"
+                      MaxDropDownHeight="250" FontSize="22" FontFamily="Trebuchet MS" />
             <fa:ImageAwesome Icon="Exchange" Height="31" Width="40" Foreground="White" 
                              VerticalAlignment="Top" Margin="22 15 0 0" />
             <ComboBox Name="cmbTo" Height="40" Width="200" Margin="23 10 0 0"
-                       VerticalAlignment="Top" FontSize="22" FontFamily="Trebuchet MS" />
+                      VerticalAlignment="Top" VerticalContentAlignment="Top"
+                      MaxDropDownHeight="250" FontSize="22" FontFamily="Trebuchet MS" />
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="80" Width="780" Margin="0 150 0 0">
@@ -64,30 +66,30 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="40" Width="780" Margin="0 190 0 0">
-            <Label Height="40" Width="200" Margin="35 0 0 0"
+            <Label Name="lblCourse" Height="40" Width="200" Margin="35 0 0 0"
                    VerticalAlignment="Top" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
-            <Label Height="40" Width="485" Margin="35 0 0 0"
+            <Label Name="lblConvertedCurrency" Height="40" Width="485" Margin="35 0 0 0"
                    VerticalAlignment="top" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="60" Width="800">
-            <Button Name="Convert" Content="Convert" Foreground="White"
+            <Button Name="btnConvert" Content="Convert" Foreground="White"
                     FontSize="22" FontFamily="Trebuchet MS" Height="50" Width="200" Margin="175 0 0 0"
-                    Style="{StaticResource ButtonRound}" RenderTransformOrigin="0.5,0.504">
+                    Style="{StaticResource ButtonRound}" RenderTransformOrigin="0.5,0.504" Click="Convert_Click">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button Name="Clear" Content="Clear" Foreground="White"
+            <Button Name="btnClear" Content="Clear" Foreground="White"
                     FontSize="22" FontFamily="Trebuchet MS" Height="50" Width="200" Margin="50 0 0 0"
-                    Style="{StaticResource ButtonRound}">
+                    Style="{StaticResource ButtonRound}" Click="Clear_Click">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
