@@ -16,20 +16,20 @@
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <Label Content="Currency Converter" Width="820" 
                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
-                   FontSize="40" FontWeight="ExtraBold" FontFamily="Trebuchet MS" Foreground="#1c58e8"/>
+                   FontSize="40" FontWeight="ExtraBold" FontFamily="Trebuchet MS" Foreground="#4E31C2"/>
         </StackPanel>
         <Border Grid.Row="1" Width="800" CornerRadius="15" BorderThickness="8" Margin="10">
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                    <GradientStop Color="#2896f4" Offset="0.0" />
-                    <GradientStop Color="#1c58e8" Offset="1.0" />
+                    <GradientStop Color="#4E31C2" Offset="0.0" />
+                    <GradientStop Color="#1E0582" Offset="1.0" />
                 </LinearGradientBrush>
             </Border.BorderBrush>
             <Rectangle >
                 <Rectangle.Fill>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
@@ -70,8 +70,8 @@
                     Style="{StaticResource ButtonRound}">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
@@ -80,8 +80,8 @@
                     Style="{StaticResource ButtonRound}" RenderTransformOrigin="0.5,0.504">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
@@ -90,8 +90,8 @@
                     Style="{StaticResource ButtonRound}">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#2896f4" Offset="0.0" />
-                        <GradientStop Color="#1c58e8" Offset="1.0" />
+                        <GradientStop Color="#4E31C2" Offset="0.0" />
+                        <GradientStop Color="#1E0582" Offset="1.0" />
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
