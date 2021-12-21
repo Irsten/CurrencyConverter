@@ -47,13 +47,13 @@
                     VerticalAlignment="Top" Margin="0 70 0 0" Height="60" Width="780">
             <TextBox Name="txtAmount" Height="40" Width="200" Margin="35 10 0 0"
                        PreviewTextInput="NumberValidationTextBox" VerticalAlignment="Top" 
-                       VerticalContentAlignment="Center" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
+                       VerticalContentAlignment="Center" Background="White" FontSize="18" FontFamily="Trebuchet MS" />
             <ComboBox Name="cmbFrom" Height="40" Width="200" Margin="35 10 0 0"
-                       VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="22" FontFamily="Trebuchet MS" />
+                       VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="18" FontFamily="Trebuchet MS" />
             <fa:ImageAwesome Icon="Exchange" Height="31" Width="40" Foreground="White" 
                              VerticalAlignment="Top" Margin="22 15 0 0" />
             <ComboBox Name="cmbTo" Height="40" Width="200" Margin="23 10 0 0"
-                       VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="22" FontFamily="Trebuchet MS" />
+                       VerticalAlignment="Top" VerticalContentAlignment="Center" FontSize="18" FontFamily="Trebuchet MS" />
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="80" Width="780" Margin="0 150 0 0">
@@ -61,7 +61,7 @@
                    VerticalAlignment="top" HorizontalAlignment="Left" Foreground="White"
                    FontSize="22" FontFamily="Trebuchet MS" />
             <Label Name="lblConvertedCurrency" Height="40" Width="435" Margin="35 0 0 0"
-                   VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" FontSize="22" FontFamily="Trebuchet MS" />
+                   VerticalAlignment="Top" HorizontalAlignment="Left" Background="White" FontSize="18" FontFamily="Trebuchet MS" />
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center"
                     VerticalAlignment="Top" Height="60" Width="800">
